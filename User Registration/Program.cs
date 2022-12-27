@@ -11,7 +11,11 @@ namespace User_Registration
             string firstname = Console.ReadLine();
             bool name = pat.Validate_FirstName(firstname);
             Console.WriteLine(name);
-            
+            Console.WriteLine("Enter the Last Name: ");
+            string lastname = Console.ReadLine();
+            bool name1 = pat.Validate_LastName(lastname);
+            Console.WriteLine(name1);
+
         }
     }
 }
