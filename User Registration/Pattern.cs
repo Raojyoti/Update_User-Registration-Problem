@@ -17,5 +17,10 @@ namespace User_Registration
         {
             return Regex.IsMatch(lastname, REGEX_LASTNAMECODE);
         }
+        public static string REGEX_EMAILCODE = @"^([abc]+)(\.[a-z0-9_\+\-]+)?@([bl]+)\.([co]{2,4})(\.[a-z]{2})?$";
+        public bool Validate_Email(string email)
+        {
+            return Regex.IsMatch(email, REGEX_EMAILCODE);
+        }
     }
 }
