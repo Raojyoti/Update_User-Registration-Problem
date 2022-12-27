@@ -26,7 +26,11 @@ namespace User_Registration
             string phonenumber = Console.ReadLine();
             bool num = pat.Validate_PhoneNumber(phonenumber);
             Console.WriteLine(num);
-
+            Console.WriteLine("----------------------------------------");
+            Console.WriteLine("Enter Password: ");
+            string password = Console.ReadLine();
+            bool pass1 = pat.Validate_Password(password);
+            Console.WriteLine(pass1);
         }
     }
 }

@@ -27,5 +27,10 @@ namespace User_Registration
         {
             return Regex.IsMatch(phonenumber, REGEX_PHONECODE);
         }
+        public static string REGEX_PASSWORDCODE1 = "^[a-z]{8}$";
+        public bool Validate_Password(string password)
+        {
+            return Regex.IsMatch(password, REGEX_PASSWORDCODE1);
+        }
     }
 }
