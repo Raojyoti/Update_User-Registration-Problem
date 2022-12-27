@@ -22,5 +22,10 @@ namespace User_Registration
         {
             return Regex.IsMatch(email, REGEX_EMAILCODE);
         }
+        public static string REGEX_PHONECODE = "^+[1-9]{2}[: :][0-9]{10}$";
+        public bool Validate_PhoneNumber(string phonenumber)
+        {
+            return Regex.IsMatch(phonenumber, REGEX_PHONECODE);
+        }
     }
 }
