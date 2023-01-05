@@ -93,4 +93,80 @@ namespace User_Registration
             return Regex.IsMatch(email, REGEX_EmailCODE9);
         }
     }
+    public class UserEntryValidationTest
+    {
+        public static string REGEX_CODE = "^[A-Z]{1}[a-z]{2}$";
+        public static string REGEX_LASTNAMECODE = "^[A-Z]{1}[a-z]{2}$";
+        public static string REGEX_EMAILCODE = @"^([abc]+)(\.[a-z0-9_\+\-]+)?@([bl]+)\.([co]{2,4})(\.[a-z]{2})?$";
+        public static string REGEX_PHONECODE = "^+[1-9]{2}[: :][0-9]{10}$";
+        public static string REGEX_PASSWORDCODE1 = "^[a-z]{8}$";
+        public string ValidateFirstName(string firstname) =>
+            Regex.IsMatch(firstname, REGEX_CODE) ? "Sam" : "Roy";
+        public void ValidationFirstName(string firstname)
+        {
+            Console.WriteLine(Regex.IsMatch(firstname, REGEX_CODE));
+        }
+        public string ValidateLastName(string lastname) =>
+            Regex.IsMatch(lastname, REGEX_LASTNAMECODE) ? "Roy" : "Last Name is not match";
+        public void ValidationLastName(string lastname)
+        {
+            Console.WriteLine(Regex.IsMatch(lastname, REGEX_LASTNAMECODE));
+        }
+        public string ValidateEmail(string email) =>
+            Regex.IsMatch(email, REGEX_EMAILCODE) ? "abc.xyz@bl.co.in" : "Email is not match";
+        public void ValidationEmail(string email)
+        {
+            Console.WriteLine(Regex.IsMatch(email, REGEX_EMAILCODE));
+        }
+        public string ValidatePhoneNumber(string phonenumber) =>
+            Regex.IsMatch(phonenumber, REGEX_PHONECODE) ? "91 9919819801" : "Phonenumber is not match";
+        public void ValidationPhoneNumber(string phonenumber)
+        {
+            Console.WriteLine(Regex.IsMatch(phonenumber, REGEX_PHONECODE));
+        }
+        public string ValidatePassword1(string password) =>
+             Regex.IsMatch(password, REGEX_PASSWORDCODE1) ? "jyotirao" : "Password is not match";
+        public void ValidationPassword(string password)
+        {
+            Console.WriteLine(Regex.IsMatch(password, REGEX_PASSWORDCODE1));
+        }
+    }
+    public class UserEntryValidation
+    {
+        public static string REGEX_CODE = "^[A-Z]{1}[a-z]{2}$";
+        public static string REGEX_LASTNAMECODE = "^[A-Z]{1}[a-z]{2}$";
+        public static string REGEX_EMAILCODE = @"^([abc]+)(\.[a-z0-9_\+\-]+)?@([bl]+)\.([co]{2,4})(\.[a-z]{2})?$";
+        public static string REGEX_PHONECODE = "^+[1-9]{2}[: :][0-9]{10}$";
+        public static string REGEX_PASSWORDCODE1 = "^[a-z]{8}$";
+        public string ValidateFirstName(string firstname) =>
+            Regex.IsMatch(firstname, REGEX_CODE) ? "First Name is Match" : "Name is not match";
+        public void ValidationFirstName(string firstname)
+        {
+            Console.WriteLine(Regex.IsMatch(firstname, REGEX_CODE));      
+        }
+        public string Validate_LastName(string lastname) =>
+            Regex.IsMatch(lastname, REGEX_LASTNAMECODE) ? "Last Name is Match" : "Last Name is not match";
+        public void ValidationLastName(string lastname)
+        {
+            Console.WriteLine(Regex.IsMatch(lastname, REGEX_LASTNAMECODE));
+        }
+        public string Validate_Email(string email) =>
+            Regex.IsMatch(email, REGEX_EMAILCODE) ? "Email is Match" : "Email is not match";
+        public void ValidationEmail(string email)
+        {
+            Console.WriteLine(Regex.IsMatch(email, REGEX_EMAILCODE));
+        }
+        public string Validate_PhoneNumber(string phonenumber)=>
+            Regex.IsMatch(phonenumber, REGEX_PHONECODE) ? "Phone number is Match" : "Phonenumber is not match";
+        public void ValidationPhoneNumber(string phonenumber)
+        {
+            Console.WriteLine(Regex.IsMatch(phonenumber, REGEX_PHONECODE));
+        }
+        public string Validate_Password1(string password) =>
+             Regex.IsMatch(password, REGEX_PASSWORDCODE1)? "Password number is Match" : "Password is not match";
+        public void ValidationPassword(string password)
+        {
+            Console.WriteLine(Regex.IsMatch(password, REGEX_PASSWORDCODE1));
+        }
+    }
 }

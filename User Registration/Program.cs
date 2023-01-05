@@ -59,7 +59,7 @@ namespace User_Registration
             Console.WriteLine("----------------------------------------");
             Console.WriteLine("Enter Email: ");
             string email3 = Console.ReadLine();
-            bool id3= pat.Validate_Email3(email3);
+            bool id3 = pat.Validate_Email3(email3);
             Console.WriteLine(id3);
             Console.WriteLine("----------------------------------------");
             Console.WriteLine("Enter Email: ");
@@ -69,7 +69,7 @@ namespace User_Registration
             Console.WriteLine("----------------------------------------");
             Console.WriteLine("Enter Email: ");
             string email5 = Console.ReadLine();
-            bool id5= pat.Validate_Email5(email5);
+            bool id5 = pat.Validate_Email5(email5);
             Console.WriteLine(id5);
             Console.WriteLine("----------------------------------------");
             Console.WriteLine("Enter Email: ");
@@ -91,8 +91,7 @@ namespace User_Registration
             string email9 = Console.ReadLine();
             bool id9 = pat.Validate_Email9(email9);
             Console.WriteLine(id9);
-
-
+            Console.WriteLine("----------------------------------------");
         }
     }
 }
