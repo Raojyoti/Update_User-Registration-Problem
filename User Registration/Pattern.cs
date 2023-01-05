@@ -32,5 +32,10 @@ namespace User_Registration
         {
             return Regex.IsMatch(password, REGEX_PASSWORDCODE1);
         }
+        public static string REGEX_PASSWORDCODE2 = "^[a-zA-Z]{8}$";
+        public bool Validate_Password1(string password)
+        {
+            return Regex.IsMatch(password, REGEX_PASSWORDCODE2);
+        }
     }
 }
