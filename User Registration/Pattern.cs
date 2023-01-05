@@ -102,34 +102,14 @@ namespace User_Registration
         public static string REGEX_PASSWORDCODE1 = "^[a-z]{8}$";
         public string ValidateFirstName(string firstname) =>
             Regex.IsMatch(firstname, REGEX_CODE) ? "Sam" : "Last Name is not match";
-        public void ValidationFirstName(string firstname)
-        {
-            Console.WriteLine(Regex.IsMatch(firstname, REGEX_CODE));
-        }
         public string ValidateLastName(string lastname) =>
             Regex.IsMatch(lastname, REGEX_LASTNAMECODE) ? "Roy" : "Last Name is not match";
-        public void ValidationLastName(string lastname)
-        {
-            Console.WriteLine(Regex.IsMatch(lastname, REGEX_LASTNAMECODE));
-        }
         public string ValidateEmail(string email) =>
             Regex.IsMatch(email, REGEX_EMAILCODE) ? "abc.xyz@bl.co.in" : "Email is not match";
-        public void ValidationEmail(string email)
-        {
-            Console.WriteLine(Regex.IsMatch(email, REGEX_EMAILCODE));
-        }
         public string ValidatePhoneNumber(string phonenumber) =>
             Regex.IsMatch(phonenumber, REGEX_PHONECODE) ? "91 9919819801" : "Phonenumber is not match";
-        public void ValidationPhoneNumber(string phonenumber)
-        {
-            Console.WriteLine(Regex.IsMatch(phonenumber, REGEX_PHONECODE));
-        }
         public string ValidatePassword1(string password) =>
              Regex.IsMatch(password, REGEX_PASSWORDCODE1) ? "jyotirao" : "Password is not match";
-        public void ValidationPassword(string password)
-        {
-            Console.WriteLine(Regex.IsMatch(password, REGEX_PASSWORDCODE1));
-        }
     }
     public class UserEntryValidation
     {
