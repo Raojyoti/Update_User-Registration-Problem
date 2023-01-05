@@ -65,5 +65,17 @@ namespace PaternTest
             //Assert
             Assert.AreEqual(actual, excepted);
         }
+        [Test]
+        public void ValidateMultipleEmail()
+        {
+            //Arrange
+            string excepted = "jyotirao489@gmail.com";
+            string email = "abc.ram@bl.co.im";
+            //Act
+            ValidateMultipleEmailAddress analyser = new ValidateMultipleEmailAddress();
+            string actual = analyser.MultipleEmailAddress(email);
+            //Assert
+            Assert.AreEqual(actual, excepted);
+        }
     }
 }

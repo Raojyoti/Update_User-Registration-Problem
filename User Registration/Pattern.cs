@@ -111,6 +111,16 @@ namespace User_Registration
         public string ValidatePassword1(string password) =>
              Regex.IsMatch(password, REGEX_PASSWORDCODE1) ? "jyotirao" : "Password is not match";
     }
+    public class ValidateMultipleEmailAddress
+    {
+        public static string REGEX_EMAILCODE = @"^([a-z0-9]+)(\.[a-z0-9_\+\-]+)?@([a-z]+)\.([a-z0-9]{2,4})(\.[a-z]{2})?$";
+        public string MultipleEmailAddress(string email) =>
+            Regex.IsMatch(email, REGEX_EMAILCODE) ? "jyotirao489@gmail.com" : "Email is not match";
+        public void ValidationEmail(string email)
+        {
+            Console.WriteLine(Regex.IsMatch(email, REGEX_EMAILCODE));
+        }
+    }
     public class UserEntryValidation
     {
         public static string REGEX_CODE = "^[A-Z]{1}[a-z]{2}$";
