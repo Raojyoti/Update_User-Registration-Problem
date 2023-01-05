@@ -42,5 +42,10 @@ namespace User_Registration
         {
             return Regex.IsMatch(password, REGEX_PASSWORDCODE3);
         }
+        public static string PASSWORDCODE4 = @"^[a-zA-Z0-9]?[~`!@#$%^&*()-_+={}[]|\;:""<>,./?]{1,8}$";
+        public bool Validate_Password4(string password)
+        {
+            return Regex.IsMatch(password, PASSWORDCODE4);
+        }
     }
 }

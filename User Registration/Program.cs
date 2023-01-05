@@ -41,6 +41,11 @@ namespace User_Registration
             string password3 = Console.ReadLine();
             bool pass3 = pat.Validate_Password3(password2);
             Console.WriteLine(pass3);
+            Console.WriteLine("----------------------------------------");
+            Console.WriteLine("Enter Password: ");
+            string password4 = Console.ReadLine();
+            bool pass4 = pat.Validate_Password4(password2);
+            Console.WriteLine(pass4);
 
         }
     }
