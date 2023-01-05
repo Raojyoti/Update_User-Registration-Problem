@@ -47,5 +47,50 @@ namespace User_Registration
         {
             return Regex.IsMatch(password, PASSWORDCODE4);
         }
+        public static string REGEX_EmailCODE1 = @"^([a-z]+)?@([a-z]+)\.([a-z\,]{2,})$";
+        public bool Validate_Email1(string email)
+        {
+            return Regex.IsMatch(email, REGEX_EmailCODE1);
+        }
+        public static string REGEX_EmailCODE2 = @"^([a-z0-9\-]+)?@([a-z]+)\.([a-z\,]{2,})$";
+        public bool Validate_Email2(string email)
+        {
+            return Regex.IsMatch(email, REGEX_EmailCODE2);
+        }
+        public static string REGEX_EmailCODE3 = @"^([a-z0-9\.]+)?@([a-z]+)\.([a-z\,]{2,})$";
+        public bool Validate_Email3(string email)
+        {
+            return Regex.IsMatch(email, REGEX_EmailCODE3);
+        }
+        public static string REGEX_EmailCODE4 = @"^([a-z0-9]+)?@([a-z]+)\.([a-z\,]{2,})$";
+        public bool Validate_Email4(string email)
+        {
+            return Regex.IsMatch(email, REGEX_EmailCODE4);
+        }
+        public static string REGEX_EmailCODE5 = @"^([a-z0-9\-]+)?@([a-z]+)\.([a-z\,]{2,})$";
+        public bool Validate_Email5(string email)
+        {
+            return Regex.IsMatch(email, REGEX_EmailCODE5);
+        }
+        public static string REGEX_EmailCODE6 = @"^([a-z]+)(\.[a-z0-9_\+\-]+)?@([a-z]+)\.([a-z]{2,4})(\.[a-z]{2})?$";
+        public bool Validate_Email6(string email)
+        {
+            return Regex.IsMatch(email, REGEX_EmailCODE6);
+        }
+        public static string REGEX_EmailCODE7 = @"^([a-z]+)?@([1]+)\.([a-z\,]{2,})$";
+        public bool Validate_Email7(string email)
+        {
+            return Regex.IsMatch(email, REGEX_EmailCODE7);
+        }
+        public static string REGEX_EmailCODE8= @"^([a-z]+)?@([a-z]+)\.([a-z]{2,5})(\.[a-z]{3})?$";
+        public bool Validate_Email8(string email)
+        {
+            return Regex.IsMatch(email, REGEX_EmailCODE8);
+        }
+        public static string REGEX_EmailCODE9 = @"^([a-z0-9\+]+)?@([a-z]+)\.([a-z\,]{2,})$";
+        public bool Validate_Email9(string email)
+        {
+            return Regex.IsMatch(email, REGEX_EmailCODE9);
+        }
     }
 }
