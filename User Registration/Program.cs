@@ -92,6 +92,13 @@ namespace User_Registration
             bool id9 = pat.Validate_Email9(email9);
             Console.WriteLine(id9);
             Console.WriteLine("----------------------------------------");
+            UserEntryValidation userEntry = new UserEntryValidation();
+            userEntry.ValidationFirstName("Sam");
+            userEntry.ValidationLastName("Roy");
+            userEntry.ValidationEmail("abc.xyz@bl.co.in");
+            userEntry.ValidationPhoneNumber("91 9919819801");
+            userEntry.ValidationPassword("jyotirao");
+
         }
     }
 }

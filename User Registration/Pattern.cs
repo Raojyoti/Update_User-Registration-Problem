@@ -101,7 +101,7 @@ namespace User_Registration
         public static string REGEX_PHONECODE = "^+[1-9]{2}[: :][0-9]{10}$";
         public static string REGEX_PASSWORDCODE1 = "^[a-z]{8}$";
         public string ValidateFirstName(string firstname) =>
-            Regex.IsMatch(firstname, REGEX_CODE) ? "Sam" : "Roy";
+            Regex.IsMatch(firstname, REGEX_CODE) ? "Sam" : "Last Name is not match";
         public void ValidationFirstName(string firstname)
         {
             Console.WriteLine(Regex.IsMatch(firstname, REGEX_CODE));
