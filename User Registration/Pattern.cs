@@ -40,7 +40,7 @@ namespace User_Registration
         public static string REGEX_PASSWORDCODE3 = "^[a-zA-Z0-9]{8}$";
         public bool Validate_Password3(string password)
         {
-            return Regex.IsMatch(password, REGEX_CODE);
+            return Regex.IsMatch(password, REGEX_PASSWORDCODE3);
         }
     }
 }
