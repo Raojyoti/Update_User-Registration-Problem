@@ -29,13 +29,18 @@ namespace User_Registration
             Console.WriteLine("----------------------------------------");
             Console.WriteLine("Enter Password: ");
             string password1 = Console.ReadLine();
-            bool pass1 = pat.Validate_Password(password1);
+            bool pass1 = pat.Validate_Password1(password1);
             Console.WriteLine(pass1);
             Console.WriteLine("----------------------------------------");
             Console.WriteLine("Enter Password: ");
             string password2 = Console.ReadLine();
-            bool pass2 = pat.Validate_Password(password2);
-            Console.WriteLine(pass1);
+            bool pass2 = pat.Validate_Password2(password2);
+            Console.WriteLine(pass2);
+            Console.WriteLine("----------------------------------------");
+            Console.WriteLine("Enter Password: ");
+            string password3 = Console.ReadLine();
+            bool pass3 = pat.Validate_Password3(password2);
+            Console.WriteLine(pass3);
 
         }
     }

@@ -28,14 +28,19 @@ namespace User_Registration
             return Regex.IsMatch(phonenumber, REGEX_PHONECODE);
         }
         public static string REGEX_PASSWORDCODE1 = "^[a-z]{8}$";
-        public bool Validate_Password(string password)
+        public bool Validate_Password1(string password)
         {
             return Regex.IsMatch(password, REGEX_PASSWORDCODE1);
         }
         public static string REGEX_PASSWORDCODE2 = "^[a-zA-Z]{8}$";
-        public bool Validate_Password1(string password)
+        public bool Validate_Password2(string password)
         {
             return Regex.IsMatch(password, REGEX_PASSWORDCODE2);
+        }
+        public static string REGEX_PASSWORDCODE3 = "^[a-zA-Z0-9]{8}$";
+        public bool Validate_Password3(string password)
+        {
+            return Regex.IsMatch(password, REGEX_CODE);
         }
     }
 }
